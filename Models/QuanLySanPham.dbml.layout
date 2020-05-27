@@ -14,7 +14,7 @@
         <elementListCompartment Id="7376789d-552a-4766-b239-4db0daa5424f" absoluteBounds="5.515, 1.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.875 : 2.06814697265625); (5.5 : 2.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.875 : 2.06814697265625); (5.5 : 2.06814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/QuanLySanPhamDataContext/Catalog/Catalog_Product" />
       <nodes>
         <classShapeMoniker Id="a4b92a54-a597-4809-bb40-2db96abc8aaa" />

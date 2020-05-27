@@ -40,5 +40,21 @@ namespace Learning.Controllers
             }
             return View();
         }
+        public ActionResult Edit(int id)
+        {
+            QuanLySanPhamDataContext context = new QuanLySanPhamDataContext();
+            Catalog catalog = context.Catalogs.FirstOrDefault(x=> x.Id == id);
+            if (Request.Form.Count == 0)
+            {
+                return View(catalog);
+            }
+                string catalogCode = Request.Form["CatalogCode"];
+                string catalogName = Request.Form["CatalogName"];
+                catalog.CatalogCode = catalogCode;
+                catalog.CatalogName = catalogName;
+                
+                context.SubmitChanges();
+                return RedirectToAction("Index");
+        }
     }
 }

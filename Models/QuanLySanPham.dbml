@@ -19,4 +19,15 @@
       <Association Name="Catalog_Product" Member="Catalog" ThisKey="CatalogId" OtherKey="Id" Type="Catalog" IsForeignKey="true" />
     </Type>
   </Table>
+  <Function Name="dbo.CTSP" Method="CTSP">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CTSPResult">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CatalogId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProductCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProductName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UnitPrice" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

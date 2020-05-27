@@ -128,6 +128,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProductForDisplay.cs" />
     <Compile Include="Models\QuanLySanPham.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -187,6 +188,10 @@
     <Content Include="Views\Catalog\SanPhams.cshtml" />
     <Content Include="Views\Catalog\Create.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Catalog\Edit.cshtml" />
+    <Content Include="Views\Product\CTSP_SP.cshtml" />
+    <Content Include="Views\Product\DanhSachSanPhamChonLoc.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
